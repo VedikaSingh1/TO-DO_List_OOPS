@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+    <title>TO-DO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neon+Tubes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div>
+        <h1>•❃°•°❀°•°❃• TO-DO •❃°•°❀°•°❃•</h1>
+      </div>
+      <form class="todo-list">
+        <input type="text" placeholder="Add a new task..." id="title" />
+        <select id="priority" name="priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="button" id="add">Add</button>
+        <select id="priority-filter" name="priority">
+          <option value="all">All</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="button" id="filter-priority">Filter</button>
+      </form>
+      <div class="tasks"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
